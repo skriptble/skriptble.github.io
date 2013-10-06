@@ -1,0 +1,7 @@
+site:
+    title: 'My New Website'
+    description: 'A website recently generated with PieCrust.'
+    author: kristoferbrandow
+    pretty_urls: false
+smartypants:
+    enable: true
