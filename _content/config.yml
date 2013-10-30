@@ -1,7 +1,0 @@
-site:
-    title: 'skriptble'
-    description: 'The blog of a DevKid'
-    author: skriptble
-    pretty_urls: true
-smartypants:
-    enable: true
