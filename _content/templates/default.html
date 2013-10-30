@@ -1,27 +1,30 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="author" content="{{ site.author }}">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="shortcut icon" href="assets/ico/favicon.png">
-  <title>{{ site.title }}{% if page.title %} &mdash; {{ page.title }}{% endif %}</title>
-  <link rel="stylesheet" type="text/css" href="{{ site.root }}css/simple.css" />
-  <!--link rel="stylesheet" href="http://basehold.it/31/ff0000"-->
-</head>
-<body>
-  <div id="container">
-    <header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <title>{{ site.title }}{% if page.title %} &mdash; {{ page.title }}{% endif %}</title>
+    <!-- Bootstrap -->
+    <link href="{{ site.root }}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.root }}css/skriptble.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    {% include "menu.html" %}
+      <header>
         {% block header %}
-        {% if page.title %}
-        <p class="site-title"><a href="{{ site.root }}">{{ site.title }}</a></p>
-        {% else %}
-        <h1><a href="{{ site.root }}">{{ site.title }}</a></h1>
-        {% endif %}
         {% endblock %}
-    </header>
-    <section id="main" role="main">
+      </header>
+      <section id="main" role="main">
         {% block main %}
         {% if page.title %}
         <h1 class="page-title">{{ page.title }}</h1>
@@ -29,12 +32,18 @@
 
         {{ content|raw }}
         {% endblock %}
-    </section>
-    <footer>
+      </section>
+      <footer>
         {% block footer %}
         {% endblock %}
         <p>{{ piecrust.branding|raw }}</p>
-    </footer>
-  </div>
-</body>
+      </footer>
+    </div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="{{ site.root }}js/bootstrap.js"></script>
+    {{ piecrust.debug_info|raw }}
+  </body>
 </html>

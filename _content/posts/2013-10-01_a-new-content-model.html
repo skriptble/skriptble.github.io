@@ -1,0 +1,103 @@
+---
+title: GIT: A New Content Model
+time: 23:17:54
+date: 01-10-2013
+author: skriptble
+layout: post
+---
+
+Content is the most important thing on the web. Without it, all the javascript,
+css, and shiny wouldn't mean a thing. It doesn't matter what backend system you
+use, whether it's PHP, Java, .NET, Ruby, Python, or Node.js. Without content,
+they have nothing to serve. The storage of this content is just as important as
+the content itself, so perhaps it's time to come up with a new method for
+storing it.
+
+<!-- more -->
+
+When I first started doing web development, I had absolutely no idea how the
+technologies that powered it worked. I understood what HTML and CSS were, but
+things like PHP and MySQL baffled me. Eventually I did learn them and MySQL all
+of the sudden became this awesome thing I felt like I store anything in.
+
+Once I started to work on the web more and develop my skills I quickly realized
+that building custom tables and designing the database was less fun when you
+encountered larger problems. That's when I discovered Content Management
+Systems, specially Wordpress, Joomla, and Drupal. These systems took the work of
+figuring out how to store data. They had nice GUI interfaces to build out the
+content model and add new fields like images and taxonomy.
+
+Now that I've been working in the web for a couple of years, I've begun to
+realize that using MySQL to store content is like writing your term paper in
+excel and having the professor compile all the papers into a massive excel file
+for grading and storage. Then we build a shiny Word interface on top of it. But
+the content is still being stored as an excel file. It worked though, so we used
+what we had.
+
+We've taken it too far. Now we throw quite a bit of effort into scaling this
+system and throwing things in front of it to make it run faster (hello varnish).
+It seems we've forgotten something important. The most important thing about the
+web: the content. We've been focusing on making our content work for this
+technology that doesn't really suit it. MySQL, like Excel, isn't a bad piece of
+technology, it's actually an amazing piece of technology, just not for storing
+content. We write papers in Word for a reason.
+
+Sometimes the tools we use for one task match up pretty well for another task.
+In this case the same tools I use everyday to write code also fit well for
+storing content. Content shouldn't exist associated directly to a page. It
+should be a singular unit of information, regardless of the eventual display
+format. We should have a history of our content. Different people should be able
+to work on the same content at the same time and be able to merge their changes.
+Our content should be easy to backup and safeguard, and it shouldn't care about
+being stored in a specific format. It should be indexable.
+
+I propose a new system. One that uses git for the content storage and history
+tracking and a document store for representation of the content. The document
+store should also be able to index the content and it's associated metadata. The
+system we use should be able to read the content from the git version controlled
+files into the document store. The content interface should be focused on
+collecting atomic units of content. The page paradigm doesn't fit the web. Our
+pages are beginning to melt away, the use of technologies like pjax and spa
+(single page applications) is melting away the page refresh. Our content
+assembling system should be able to not only compile the content together, but
+actually relate the content. Google does this with ads, you visit a site and
+then bam, that site's ads are on every other site because of google's ad
+network. Advertising has found a way to make this work, but the web is not
+about advertising . The web is about content.
+
+We need to take this powerful technology and apply it to aspects of the web that
+help people. I'm not talking about corporate websites, the Apple websites of the
+world are doing just fine. It's a common joke that the only thing that's on a
+university's homepage that the user actually needs is the name of the
+university. This problem reaches beyond universities to almost all non-profits.
+I think this comes from a fundamental misunderstanding that non-profits and
+university's have that the private for-profit companies certainly do not. The
+universities and non-profits see the web as secondary. It's just a side benefit,
+not the focus of funds or dedicated attention. Like many things, they often try
+to get it on the cheap and get it done fast. There's a core problem with this
+thinking, and it lies in the actual cost financially.
+
+I completely understand that non-profits don't usually have a large amount of
+funding and that they wish to tackle the core of the problem they're trying to
+solve. The problem comes in when the actual cost of a cheaply made website comes
+in. I've seen a number of these websites take twice as long if not more to
+administrate. If we're talking about a web application used by everyone in the
+company, the amount of time you waste is most likely even more.
+
+Then, in the end, as with one of my recent projects, you higher a more expensive
+web developer to fix up whatever it was that was broken. If the company had just
+gone with the second developer in the first place it would have cost the same,
+but they wouldn't have had to pay for the first web developer's botch and the
+additional time wasted by their employees.
+
+Of course this doesn't apply to all non-profits and it has really just been my
+personal observation. Conversations with other developers have led me to believe
+I'm not the only one that sees it.
+
+What's the solution? A number of small improvements to what we use to build
+sites and web applications. It starts with the most important thing on the web:
+the content. So let's build a better content storage and delivery system. One
+that you can use with PHP, Ruby, Python, .NET, NodeJS, Java, or any other
+backend. It's time we all start helping each other in as many ways as possible.
+
+There is plenty of web for everyone, I assure you that.

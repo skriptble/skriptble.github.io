@@ -1,7 +1,7 @@
 site:
-    title: 'My New Website'
-    description: 'A website recently generated with PieCrust.'
-    author: kristoferbrandow
-    pretty_urls: false
+    title: 'skriptble'
+    description: 'The blog of a DevKid'
+    author: skriptble
+    pretty_urls: true
 smartypants:
     enable: true
