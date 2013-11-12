@@ -6,7 +6,7 @@
     <meta name="author" content="skriptble">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
-    <title>skriptble &mdash; Shipping And Small Steps [Draft]</title>
+    <title>skriptble &mdash; Shipping And Small Steps</title>
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/skriptble.css" rel="stylesheet">
@@ -42,7 +42,7 @@
       <header>
                       </header>
       <section id="main" role="main">
-            <h1 class="page-title">Shipping And Small Steps [Draft]</h1>
+            <h1 class="page-title">Shipping And Small Steps</h1>
     <span class="post-date">November 11, 2013</span>
   
   <p>Initial perfection isn&#8217;t possible. The launch day is not the day an application
@@ -54,19 +54,21 @@ day.</p>
 <!-- more -->
 
 <blockquote>
-  <p>&#8220;The first step is the hardest&#8221;.</p>
+  <p>&#8220;The first step is the hardest&#8221;
+  <small>An old and tired cliché</small></p>
 </blockquote>
 
-<p>That cliché is old, tired, and somewhat wrong.
-The first step is pretty easy, especially when starting a web application. Make a
+<p>That is wrong. While the first step is hard, it is certainly not that hardest
+and sometimes, it isn&#8217;t even hard.
+The first step is usually pretty easy, especially when starting a web application. Make a
 git repository, write an opening line of code, and make the initial commit. Code
 is cheap, especially compared to other disciplines like architecture or
 manufacturing. Those disciplines have physical things that are created. An
 issue with a building after it&#8217;s begun construction or product after some have
 been manufactured can become costly quickly. A bug in code doesn&#8217;t necessarily have the same ascent.</p>
 
-<p>What is important is getting the thing being built into the hands of its users
-as quickly as possible. Being first to market is important. The iPhone was the
+<p>It&#8217;s import to get that thing being built into the hands of the users as soon as
+possible. Being first to market is important. The iPhone was the
 first phone of its type, and while the market is now filled with similar
 products, Apple had an advantage from getting there first. Same goes for
 applications.</p>
@@ -77,10 +79,12 @@ it just needs that time to do so. Some features might not be necessary, and some
 that were overlooked might be that crucial thing users were looking for.
 Building applications in a vacuum is bad for the developer and the users.</p>
 
+<h2>The First Contract</h2>
+
 <p>One of the first contracts I landed as a developer was a reservation system. I
 had already built a similar system for an organization I was part of, so it felt
 like it would be easy. Looking back, what was built with the timeline involved
-was pretty phenomenal. The main problem I continually ran into was a lack of
+was phenomenal. The main problem I continually ran into was a lack of
 response from the client on some of the features. We hadn&#8217;t established a
 minimum viable product, and there was no plan for how to address issues after
 the launch of the application. This lead to a headache for both myself and the
@@ -95,36 +99,36 @@ handling the reservation and checkout of field and studio equipment, and then
 built a system facilitate that online. Even with that knowledge I still should
 have gone a step further with the second client. I should have picked up more
 shifts checking in and out equipment and handling the reservation of it. I
-should have done more exploratory exercises with the client, diving deep into
+should have done more exploratory exercises with the client, diving deeper into
 the underlying issues.</p>
 
-<p>Thing is, I&#8217;m sort of getting a second shot at it. While the system I built has
-seen its day and been retired for both the clients, I still see value in
-creating a solution for reserving stuff. I looked long and hard for a
-prepackaged solution to handle reserving things, and I found not much. There
+<p>Thing is, I&#8217;m getting a second shot at it. While the system I built has
+seen its day and been retired for both the clients, the world still needs a
+better way of reserving stuff. I looked long and hard for a
+prepackaged solution to handle reserving things. Not a whole lot turned up. There
 were some implementations, but they were usually tied to a specific CMS or
 Framework, or they were standalone and cost a shitton of money.</p>
 
 <p>It isn&#8217;t rocket science. It&#8217;s one of those problems that every implementation
 solves specifically for their exact requirements. They aren&#8217;t pluggable, the
-features of some are phenomenal, expect they&#8217;re missing those one or two killer
+features of some are phenomenal, except they&#8217;re missing those one or two killer
 features that make the system work for the specific client.</p>
 
 <p>I&#8217;ve been toying around with the idea of building an open source reservation
-system and API. I think the API is a big component too, making this system
+system and API. The API is a big component. Making this system
 pluggable into a large number of platforms will only aid in easy of use. The
 other requirement is that it should have pluggable layers. Want to use Redis
-instead of MySQL? That should force you to rebuild the front end. Want to add a
+instead of MySQL? That should not force you to rebuild the front end. Want to add a
 open and closed hours for individual items or have them be part of a lab? Why
-not be able to do both?</p>
+not both?</p>
 
-<p>With this idea in mind I took the first step. I created a repository last night,
+<p>I took the first step. I created a repository last night,
 and I plan on contributing something everyday. That&#8217;s the hard part, not
 starting, but taking continual small steps. One foot in front of the other, day
 by day. That&#8217;s how this will get done.</p>
 
 <p>If you want to help out, here&#8217;s the link to the repository:
-https://github.com/skriptble/reserve</p>
+<a href="https://github.com/skriptble/reserve">https://github.com/skriptble/reserve</a></p>
 
       </section>
       <footer>
