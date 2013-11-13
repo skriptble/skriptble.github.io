@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="The blog of a DevKid">
+    <meta name="author" content="skriptble">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <title>skriptble &mdash; Workflow, Ticket Systems, And Documentation</title>
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/skriptble.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">skriptble</a>
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li><a href="/resume">Resume</a></li>
+            <li><a href="/about">About Me</a></li>
+          </ul>
+        </div>
+      </div> <!-- /container -->
+    </div>
+    <div class="container">
+
+      <header>
+                      </header>
+      <section id="main" role="main">
+            <h1 class="page-title">Workflow, Ticket Systems, And Documentation</h1>
+    <span class="post-date">November 12, 2013</span>
+  
+  <p>Today I was fixing a problem at work with one of the sites I&#8217;m the lead
+developer on. The problem was a small and unfortunate QA error from a previous
+release of the site. While I was preparing to send out an email to some other
+team members to QA the site again I realized the only documentation of the
+problem was scattered in emails and conversations. I thought I should perhaps
+make a entry in the wiki. After a few moments of thinking, I came up with a
+better solution.</p>
+
+<!-- more -->
+
+<h2>Self Documentation</h2>
+
+<p>Self documenting makes sense. I see it as the best type of
+documentation because it don&#8217;t require extra updating when the system evolves.
+Even more, I enjoy being able to look through the history of a project and
+figure out where something went wrong or when a certain implementation decision
+was made. Writing self documenting code isn&#8217;t easy, and neither is documenting
+what the code does as a whole. Comments help, but you still have to update them
+when you update the code.</p>
+
+<p>At work we have <a href="https://www.atlassian.com/software/jira">Jira</a>, a popular issue tracking and project management
+application made by Atlassian. We underutilize it, but we&#8217;ve been talking
+recently about starting to use it efficiently. There are some workflow
+problems, but that certainly isn&#8217;t unique to us. We have documentation in our wiki,
+<a href="https://www.atlassian.com/software/confluence">Confluence</a>, but it doesn&#8217;t communicate with Jira.</p>
+
+<p>While sitting at my desk, I decided to use Jira a tiny bit more, I created a
+changelog and historical documentation. For the past
+many months I&#8217;ve been using git to manage the sites I work on. I
+use tags for production releases, making it simple to keep track of
+what commit is currently in production. It also has the nifty benefit of giving
+the site version numbers, which can be mapped in Jira and issues assigned to
+those version numbers. I already have the workflow in place, it just doesn&#8217;t go
+far enough.</p>
+
+<p>Issues don&#8217;t have the same workflow. I get an email with something wrong
+or someone walks into my office and tells me what&#8217;s wrong. Then I write some
+code to fix it, make a commit without any reference to the problem just the
+solution, and push it to staging. Then I message, email, or walk over and ask
+someone to QA it. If it&#8217;s good, I package a release with a shiny new tag, push
+it to Bitbucket, and pull it down onto production.</p>
+
+<h2>The First Step</h2>
+
+<p>Today, I created an issue in Jira, attached it to the versions
+and components of the site affected, and used the comments in the ticket to
+describe the solutions and communicate the QA phases and additional fixes.
+Now this problem is documented for the foreseeable future.
+If 5 months from now I wanted to know what was in this release,
+I can view the issues and know what occurred.</p>
+
+<p>This method of tracking not only allows us to have a solid system for following
+issues that occur in the site, it also gives us documentation. We can
+search through old tickets, and when we get Bitbucket hooked up to our Jira
+instance, the goal would be to see git information directly in our issues.</p>
+
+<p>This won&#8217;t replace traditional documentation. Until we can put in place a solid
+testing architecture, better structured code, and write elegant
+understand-while-reading-it code, we&#8217;ll need comments and wikis. I do wonder if
+other developers don&#8217;t see the value in using time to write self documenting code
+or commenting the code if you don&#8217;t. I&#8217;m hoping that I&#8217;m just arriving late to
+the part instead of being one of the early birds.</p>
+
+      </section>
+      <footer>
+                        <p>Baked with <em><a href="http://bolt80.com/piecrust/">PieCrust</a> 1.0.2</em>.</p>
+      </footer>
+    </div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45623011-1', 'skriptble.github.io');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
