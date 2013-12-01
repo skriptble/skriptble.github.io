@@ -50,37 +50,41 @@
     </h1>
     <span class="post-date">November 28, 2013</span>
   
-  <p>Today I discussed the realization and revelation from last night&#8217;s Meetup. He
-responded saying he was glad that I finally realized what he had been telling me
-for weeks. Last night&#8217;s Meetup gave me the concrete actuality of what for a
-while was only a philosophical goal.</p>
+  <p>Today I discussed the realization and revelation from last night&#8217;s Meetup with a
+coworker. He responded saying he was glad that I finally realized what he had
+been telling me for weeks. Last night&#8217;s Meetup gave me the concrete actuality of
+what, for a while, was only a philosophical goal.</p>
 
 <!-- more -->
 
 <h2>You Need Both</h2>
 
-<p>My coworker had a point. He has been telling me about the visions he has and the
-philosophical applications that our shop should be building. I agreed, but what
-I lacked was the ability to do take the step and realize that the ultimate
-magical tool I had come to love, Drupal, wasn&#8217;t the holy grail of everything
-awesome. Another coworker of mine equated the conversation I had to breaking up
-with Drupal.</p>
+<p>My coworker has a point. He has big visions for our shop that shouldn&#8217;t be too
+difficult to execute. I agree with him but I lacked the ability to take realize
+that the magical tool I had come to love, Drupal, wasn&#8217;t the holy grail of everything
+awesome. Drupal is that first relationship you have. You think it&#8217;s going to
+last forever and wind up in marriage, but there are many more fish in the sea.
+Even though it sucks, sometimes we just need to go out and explore. Maybe one
+day the love will return, maybe not. Either way, Drupal is still going to be my
+friend.</p>
 
-<p>Part of me definitely feels like I&#8217;ve broken up with Drupal, but it&#8217;s not a bad
-or messy break up. We&#8217;re still going to be pretty good friends, I just don&#8217;t
-want to be in bed with Drupal anymore. The problem is that I am a full stack
-engineer. I don&#8217;t work on singular parts of the stack, I want to tinker, learn,
-and use everything. Focusing on Drupal doesn&#8217;t allow me to do that as much.</p>
+<p>I&#8217;ve broken up with Drupal, but it&#8217;s not a bad or messy break up. I just don&#8217;t
+want to be in bed with Drupal anymore. I am a full stack engineer. I don&#8217;t work
+on singular parts of the stack, I want to tinker, learn, and use everything.
+Focusing on Drupal doesn&#8217;t allow me to do that.</p>
 
 <p>The reason that my coworker&#8217;s ideas remained philosophical to me was because
-Drupal couldn&#8217;t handle his request without major overhauling. Since I was wildly
-in love with Drupal I tried continually to figure out how to build the awesome
-things I wanted using the tool that I loved. The problem is that many of the
-application engineering principles I learned conflicted with how I wanted to
-build this new system. If we were attempting to build a couple of sites,
-Drupal&#8217;s all in one system makes sense. If we were building 200 sites that are
-all hosted in different places and are unrelated, Drupal would make sense. We
-aren&#8217;t though. We&#8217;re building 200 sites that are completely related.</p>
+Drupal couldn&#8217;t handle his request without overhauling significant built in
+functionality. Since I was wildly in love with Drupal I tried continually to
+figure out how to build the awesome things I wanted using the tool that I loved.
+The problem is that many of the application engineering principles I learned
+conflicted with how I wanted to build this new system. If we were attempting
+to build a couple of sites, Drupal&#8217;s all in one system makes sense. If we were
+building 200 sites that are all hosted in different places and are unrelated,
+Drupal would make sense. We aren&#8217;t doing either of those things. We&#8217;re
+building 200 sites that are completely related, intertwined, with a majority of
+their functionality overlapping. In some instances, their content is
+overlapping. Drupal isn&#8217;t built to handle this in an efficient way.</p>
 
 <h2>We Want Phenomenal</h2>
 
@@ -90,20 +94,20 @@ prototyping something. It can do a large number of things in a mediocre way. It
 can manage your content, but it isn&#8217;t phenomenal at it. You can edit your
 content, but it isn&#8217;t phenomenal at it. There is a lot of customization and you
 can build crazy things on Drupal like e-commerce stores, reservation systems,
-conference sites, major publications, social networking applications, and more.
-Drupal is phenomenal at being completely flexible in every way.</p>
+conference sites, publications, social networking applications, and more.
+Drupal is phenomenal at being completely flexible.</p>
 
 <p>This is a problem though. It is awesome when everyone is a great developer and
 understands conventions. It is also awesome if your application only uses a few
-contrib modules and most of your own custom code. Problem is, many Drupal sites
-have a large number of contributed modules and some have that plus custom code.
+contrib modules and the rest is your own custom code. Problem is, many Drupal sites
+have a large number of contributed modules and some have that in addition to custom code.
 I recently worked on a project where I essential had to hijack the theme system
 to get a theme template into my module. I realized I could hijack the entire
 theme system in a module and if I came back to the code 6 months from now I
 could easily spend 3 weeks trying to figure out what the heck is going on. In
 Drupal you can essentially do anything, anywhere.</p>
 
-<p>This means that Drupal is phenomenal at flexibility, but not a lot more. Sure,
+<p>This means that Drupal is phenomenally flexible but not a lot more. Sure,
 you can add contrib modules to get the functionality you want. Sometimes just
 the basic functionality takes contrib modules, which means you introduce this
 black box into your code which could be hijacking and blowing up all sorts of
@@ -112,7 +116,7 @@ to give me pause.</p>
 
 <p>We&#8217;re trying to build a number of applications that each do one thing and do it
 phenomenally. This could be accomplished with a large number of Drupal sites,
-but I also find myself questioning the use of non-unit testable, difficult to
+but I find myself questioning the use of a non-unit testable, difficult to
 cache, procedural application framework that boots an entire theme system even
 if you&#8217;re only spitting out JSON.</p>
 
@@ -120,27 +124,27 @@ if you&#8217;re only spitting out JSON.</p>
 
 <p>After all this I&#8217;ve finally realized that Drupal isn&#8217;t the end tool, it&#8217;s the
 beginning tool. There are other systems that can be built that will better
-handle the requirements we have. The main issue with using Drupal for the shop I
-work in is that we have 4 developers, a system administrator, and two designers.
+handle the requirements we have. The main issue with using Drupal our shop
+is that we have 4 developers, a system administrator, and two designers.
 We have complete control over every aspect of our stack from the bare metal to
-the HTML, CSS, and Javascript. This gives us the opportunity to build something
-exactly as we envision it.</p>
+the HTML, CSS, and Javascript. Our sites are essentially the same boilerplate
+with different content placed in.</p>
 
 <p>If we were forced to use a specific platform or set of tools, Drupal would
 probably be more appealing. With the amount of customization we&#8217;ll have to do to
-Drupal arguments of portability are pretty much moot. Writing tests for Drupal
+Drupal, arguments of portability are moot. Writing tests for Drupal
 isn&#8217;t fun, and since it creates a new Drupal install for each test, you can&#8217;t
 test with live data. Not that that&#8217;s a deal breaker, but simpletest is so slow
-it isn&#8217;t practical to use TDD. If I&#8217;m not using TDD, I would at least like the
-ability to be able to test against actual data.</p>
+it isn&#8217;t practical to use TDD. Without TDD, we&#8217;re already starting out of the
+gate with a huge disadvantage and asking for trouble quickly.</p>
 
 <p>I needed this concrete explanation of why Drupal didn&#8217;t feel right. It needed to
-come from someone that knew Drupal at an intimate level, far more than I do. I
+come from someone that knew Drupal at an intimate level, more than I do. I
 needed to understand that the feelings I had weren&#8217;t unjustified or wrong. I
 needed to know I wasn&#8217;t crazy for wanting to break up with Drupal and just be
 friends. I&#8217;m happy that my coworker and I are on the same page now, and I look
 forward to building things without feeling like I have Drupal looking over my
-shoulder, disapproving of my using another framework or technology.</p>
+shoulder, disapproving my use of another framework or technology.</p>
 
       </section>
       <footer>
