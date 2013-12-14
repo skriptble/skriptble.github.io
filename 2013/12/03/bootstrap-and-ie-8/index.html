@@ -50,28 +50,28 @@
     <span class="post-date">December 3, 2013</span>
   
   <p>I recently built an application at work for the HR department. A tight timeline
-and busy queues all around required me to write the entire application from
-backend to front end. To get things up and running I used Twitter Bootstrap.
+and busy queues required me to write the entire application from backend to front
+end, by myself. To get things up and running I used Twitter Bootstrap.
 Unfortunately, I forgot that we are still supporting Internet Explorer 8.</p>
 
 <!-- more -->
 
 <h2>Internet Explorer 8 Is Legacy</h2>
 
-<p>Internet Explorer is the most annoying browser to develop for. I don&#8217;t have to
+<p>Internet Explorer is an annoying browser to develop for. I don&#8217;t have to
 support Firefox 10 or Chrome 19. Internet Explorer is in it&#8217;s own world, and
-having to test and use it is plain annoying. I am thankful that it has developer
+having to test and use it is annoying. I am thankful that it has developer
 tools. Those tools actually saved me today when I was attempting to debug a form
 on the site.</p>
 
 <p>Internet Explorer 8 also doesn&#8217;t natively handle media queries. For bootstrap to
 work you have to add respond.js, which doesn&#8217;t work without a proxy or local
 bootstrap files. I was using a CDN that doesn&#8217;t have the proxy file set up. This
-cost me an entire day to reconfigure the site to get off the CDN and start using
-local files. It also adds some maintenance costs for the future when newer
+cost me a day to reconfigure the site to get off the CDN and start using
+local files. It also adds maintenance costs for the future when newer
 version of bootstrap come out. It was a lot of work for a single browser, but I
 do feel better knowing the application is that much better because of it. Plus,
-I was able to try out a slightly shinier bootstrap theme.</p>
+I was able to try out a shinier bootstrap theme.</p>
 
 <p>As I&#8217;ve said before, all code is legacy and it&#8217;s important to plan in update
 paths in the maintenance of the code. I&#8217;m sure I&#8217;ll find non-browser platforms
@@ -82,21 +82,20 @@ in the future that will have some of the same problems as Internet Explorer 8.</
 <p>As much as a lost day of working on the new infrastructure hurts, I&#8217;m glad I
 took the time to not just fix the singular problem I ran into. By adding
 respond.js and properly setting up the libraries I was able to make the
-application and future user experience as a whole much better. This small step
+application and future user experience as a whole better. This small step
 in the right direction is exactly the type of upgrades I talked about in
 previous posts.</p>
 
 <p>It wasn&#8217;t anything huge, but I didn&#8217;t need to fix the problems I did. The
 reported issues was only about 6 lines of CSS I added, but the value in having
-an application that works properly across applications means that I might have
-lost a day today, but I&#8217;ll save more days and headaches in the future because of
-it.</p>
+an application that works properly across browsers means that I might have
+lost a day today, but I&#8217;ll save more days and headaches in the future.</p>
 
-<p>It&#8217;s these steps that encourage me to dream big goals, because I know that I
+<p>It&#8217;s these steps that encourage me to set goals, because I know that I
 will find a way to take the small steps. Today it&#8217;s simply replacing a few small
-components. The future might be replacing large parts of legacy systems. Perhaps
+components. The future might be replacing larger parts of legacy systems. Perhaps
 we can manage to get to the point where people will barely remember of the days
-of slow upgrades and twice a year releases of your favorite browser. </p>
+of slow upgrades and twice a year releases of your favorite browser.</p>
 
       </section>
       <footer>
