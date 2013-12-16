@@ -49,9 +49,9 @@
     </h1>
     <span class="post-date">December 4, 2013</span>
   
-  <p>I&#8217;ve been hard at working building the new infrastructure at work, so I&#8217;ve been
-buried deep in Puppet and Vagrant. I wanted to get my head out of system
-administration for a bit so today I started the task of migrating a module from
+  <p>I&#8217;ve been hard at work building the new infrastructure at work, so I&#8217;ve been
+buried deep in Puppet and Vagrant. I wanted to get my head out of devops
+for a bit so today I started the task of migrating a module from
 Drupal 7 to Drupal 8 alpha 8.</p>
 
 <!-- more -->
@@ -59,9 +59,9 @@ Drupal 7 to Drupal 8 alpha 8.</p>
 <h2>The Plan</h2>
 
 <p>The module I&#8217;ll be migrating is the authentication module we use on our sites.
-Like most universities, we have an internal single sign-on system. Using an
-outside of Drupal authentication system reduces headaches, emails for password
-reset, and over all enhances the security of our sites. I believe the steps I&#8217;m
+Like most universities, we have an internal single sign-on system. Using a
+central authentication system reduces headaches, emails for password
+reset, and all enhances the security of our sites. I believe the steps I&#8217;m
 taking will be applicable to most modules that are migrated from Drupal 7 to
 Drupal 8. Here are the steps I&#8217;ve come up with:</p>
 
@@ -99,10 +99,10 @@ contained 2 functions in Drupal 6 and 3 functions in Drupal 7. It isn&#8217;t to
 of a burden to place on the module.</p>
 
 <p>Learning the new way to create custom forms and routes will probably be the most
-difficult part of shifting from Drupal 7 to 8. I don&#8217;t believe this will be a
+difficult part of migrating from Drupal 7 to 8. I don&#8217;t believe this will be a
 difficult hurdle, but it will be a hurdle nonetheless.</p>
 
-<p>Finally, the new configuration management system will be implemented. The Drupal
+<p>Finally, the new configuration management system will be used. The Drupal
 7 version of the module heavily uses the variable system. It uses them all over
 the place purely for configuration. I will be more than happy to remove these
 items from the variables table. This will make the module easier to launch and
@@ -112,22 +112,22 @@ deploy across the different environments.</p>
 
 <p>The largest opportunity that comes to mind is potentially starting a 3.x branch
 of the Drupal 7 version and using the backported version of the configuration
-management API in Drupal 8. If a solid implementation of this can be created, I
+management API in Drupal 8. If an implementation of this can be created, I
 might even be able to use this module in a tool I&#8217;ve been working on called
 Pudding. I was going to default to using features and some other custom code to
 handle exporting the configuration into code, but standing on the shoulders of
-another modules would be much more efficient.</p>
+another module would be more efficient.</p>
 
 <p>I also see the potential for a landslide effect. Once we have the requisite
 modules working inside of Drupal 8, there isn&#8217;t much stopping us from switching
-platforms. Most of our sites and either custom code or a few contrib modules,
+versions. Most of our sites are either custom code or a few contrib modules,
 some of which are now in core.</p>
 
 <h2>The Build</h2>
 
 <p>I plan on updating with more posts as I progress through the adventure of
-migrating a module from Drupal 7 to Drupal 8. I have never migrated a module
-or site from D5 to D7, so this is my first time doing this. I honestly feel like
+migrating a module from Drupal 7 to Drupal 8. I never migrated a module
+or site from D6 to D7, so this is my first time doing this. I honestly feel like
 this experience will help me not only inside of Drupal but also exploring
 outside of Drupal.</p>
 
